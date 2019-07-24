@@ -10,7 +10,6 @@ Handler = http.server.SimpleHTTPRequestHandler
 
 with socketserver.TCPServer(("", PORT), Handler) as httpd:
     print("serving at port", PORT)
-    #call file and function 
     #Sentiment asnalysis using watson
     #FILL BELOW OUT
     service = tone_analyzer = ToneAnalyzerV3(
